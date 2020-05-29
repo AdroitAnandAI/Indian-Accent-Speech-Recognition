@@ -9,8 +9,9 @@ https://medium.com/@AnandAI/self-driving-car-on-indian-roads-4e305cb04198
 
 ## Contents:
 
------
-DeepSpeech_Training.ipynb: Retraining of DeepSpeech Model with Indian Accent Voice Data.
+- vui_notebook.ipynb: DNN Custom Models and Comparative Analysis to make a custom Speech Recognition model.
+- DeepSpeech_Training.ipynb: Retraining of DeepSpeech Model with Indian Accent Voice Data.
+- Training_Instructions.docx: Instructions to train DeepSpeech model.
 
 ## Data Source/ Training Data:
 
@@ -20,7 +21,7 @@ https://www.iitm.ac.in/donlab/tts/index.php
 
 You can also record your own audio or let the ebook reader apps read a document. But I found it is insufficient to train such a heavy model. Then I requested support of IIT Madras, Speech Lab who kindly granted access to their Voice database.
 
-## DNN Custom Models:
+## DNN Custom Models for Speech Recognition:
 
 ### Model 1: CNN + RNN + TimeDistributed Dense
 
@@ -30,24 +31,25 @@ You can also record your own audio or let the ebook reader apps read a document.
 
 ![](images/Model2.jpg)
 
-### Comparison Plot
+### Comparison: Training Loss & Validation Loss of Model 1 (CNN) & Model 2 (RNN)
+![](images/comparison.jpg)
 
 ### Model 3: Pooled CNN+Deep Bidirectional RNN +Time-distributed Dense
 
 ![](images/Model3.jpg)
 
 
-## Steps to Follow:
-- Getting a pre-trained model.
-- Steps for loading the dataset of Indian Accent English Speech.
-- Steps to transfer learning with the released model.
-- Comparing results between trained model and the Original DeepSpeech model.
+## DeepSpeech Model Training:
 
+These are the high level steps we gonna do:
+- Get a pre-trained model.
+- Load Indian Accent English Speech dataset
+- Convert to the input format to feed the DeepSpeech model.
+- Compare trained model with DeepSpeech base model to validate improvement.
 
 
 ## Step by step instructions
 
-- 
 - The dataset contains the audio and its description. But to load the data to deep speech model, we need to generate CSV containing audio file path, its transcription and file size.
 - Split the CSV file into 3 parts: test.csv,train.csv and valid.csv.
 - Write a python program that automatically set the frame rate for all audio files into 12000hz (deep speech model requirement)
