@@ -1,7 +1,7 @@
 # Indian Accent Speech Recognition
-Traditional ASR (Signal & Cepstral Analysis, DTW, HMM) & DNNs (Custom Models + DeepSpeech) on Indian Accent Speech
+_Traditional ASR (Signal & Cepstral Analysis, DTW, HMM) & DNNs (Custom Models + DeepSpeech) on Indian Accent Speech_
 
-To understand the context, theory and explanation of this project, head over to my blog:
+To understand the context, theory and explanation of this project, head over to my blog:<br>
 https://medium.com/@AnandAI/self-driving-car-on-indian-roads-4e305cb04198
 
 
