@@ -1,0 +1,4 @@
+Please download lm.binary file from here:
+https://github.com/mozilla/DeepSpeech/releases/download/v0.4.1/deepspeech-0.4.1-models.tar.gz
+
+You need to use the original language model (lm.binary) and trie along with retrained output_graph.pbmm to get the output. You can find the retrained output_graph.pbmm in this folder.
