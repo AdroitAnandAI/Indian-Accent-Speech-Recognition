@@ -1,7 +1,7 @@
 # Indian Accent Speech Recognition
 _Traditional ASR (Signal Analysis, MFCC, DTW, HMM & Language Modelling) and DNNs (Custom Models & Baidu DeepSpeech Model) on Indian Accent Speech_
 
-_**<< Uploaded the pre-trained model owing to requests >>**_
+_**<< Uploaded the pre-trained model owing to requests >>**_<br>
 _The generated trie file is uploaded to pre-trained-models directory. So you can skip the KenLM Toolkit step._
 
 To understand the context, theory and explanation of this project, head over to my blog:<br>
