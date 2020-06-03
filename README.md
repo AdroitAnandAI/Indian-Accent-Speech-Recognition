@@ -2,6 +2,7 @@
 _Traditional ASR (Signal Analysis, MFCC, DTW, HMM & Language Modelling) and DNNs (Custom Models & Baidu DeepSpeech Model) on Indian Accent Speech_
 
 _**<< Uploaded the pre-trained model owing to requests >>**_
+_The generated trie file is uploaded to pre-trained-models directory. So you can skip the KenLM Toolkit step._
 
 To understand the context, theory and explanation of this project, head over to my blog:<br>
 https://towardsdatascience.com/indian-accent-speech-recognition-2d433eb7edac
@@ -59,7 +60,7 @@ These are the high level steps we gonna do:
 - Clone the **Baidu DeepSpeech Project** 0.4.1 from here
 - **Execute DeepSpeech.py** with appropriate parameters (given below).
 - Export_dir will contain output_graph.pbmm which you load in deepspeech.model() function.
-- **KenLM ToolKit** is used to generate Trie file. It is required to pass in to deep speech decoder function.
+- **KenLM ToolKit** is used to generate Trie file. It is required to pass in to deep speech decoder function. 
 - **model.enableDecoderWithLM(lm_file,trie,0.75,1.85):** lm_file is the .pbmm after training and trie is the output of KenLM Toolkit.
 - Use deep speech decoder function to do STT.
 
