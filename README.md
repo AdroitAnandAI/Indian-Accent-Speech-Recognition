@@ -1,6 +1,8 @@
 # Indian Accent Speech Recognition
 _Traditional ASR (Signal Analysis, MFCC, DTW, HMM & Language Modelling) and DNNs (Custom Models & Baidu DeepSpeech Model) on Indian Accent Speech_
 
+_**<< Uploaded the pre-trained model owing to requests >>**_
+
 To understand the context, theory and explanation of this project, head over to my blog:<br>
 https://towardsdatascience.com/indian-accent-speech-recognition-2d433eb7edac
 
@@ -54,7 +56,7 @@ These are the high level steps we gonna do:
 - The dataset contains the audio and its description. But to load the data to deep speech model, we need to generate CSV containing audio file path, its transcription and file size.
 - **Split the CSV file** into 3 parts: test.csv,train.csv and valid.csv.
 - Write a **python program to set the frame rate** for all audio files into 12000hz (deep speech model requirement)
-- Clone the **Baidu DeepSpeech Project** 0.5.1 from here
+- Clone the **Baidu DeepSpeech Project** 0.4.1 from here
 - **Execute DeepSpeech.py** with appropriate parameters (given below).
 - Export_dir will contain output_graph.pbmm which you load in deepspeech.model() function.
 - **KenLM ToolKit** is used to generate Trie file. It is required to pass in to deep speech decoder function.
