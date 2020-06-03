@@ -11,7 +11,7 @@ https://towardsdatascience.com/indian-accent-speech-recognition-2d433eb7edac
 
 ## Contents:
 
-- vui_notebook.ipynb: **DNN Custom Models and Comparative Analysis* to make a custom Speech Recognition model.
+- vui_notebook.ipynb: **DNN Custom Models and Comparative Analysis** to make a custom Speech Recognition model.
 - DeepSpeech_Training.ipynb: **Retraining of DeepSpeech Model** with Indian Accent Voice Data.
 - Training_Instructions.docx: Instructions to train DeepSpeech model.
 
