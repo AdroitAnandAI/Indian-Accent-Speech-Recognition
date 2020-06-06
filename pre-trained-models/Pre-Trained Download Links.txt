@@ -1,0 +1,13 @@
+
+
+Please download these 2 files from the links below:
+
+a) Pre-Trained Model: output_graph.pbmm
+https://drive.google.com/file/d/1i5AGXY5Qqhdm-5ZD-KYE9Jlu8NBxPo-u/view?usp=sharing
+
+b) Language Model: lm.binary
+https://github.com/mozilla/DeepSpeech/releases/download/v0.6.1/deepspeech-0.6.1-models.tar.gz
+
+Trie file is given in pre-trained-model folder.
+
+Note: You don't need alphabet.txt file as parameter to DeepSpeech in 0.6.1. But in the previous versions, 'alphabet' parameter was mandatory.

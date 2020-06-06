@@ -10,6 +10,22 @@ https://towardsdatascience.com/indian-accent-speech-recognition-2d433eb7edac
 
 # How to Use?
 
+A starter Code to use the model is given in the file: Starter.ipynb. You can run it in your Google Colab, if you upload the 3 files (given in params) to your google drive.
+
+- Install DeepSpeech 0.6.1
+- Download the pre-trained model (.pbmm), language model and trie file. 
+- Download instructions are given in pre-trained-models folder. After download give them as arguments.
+
+```
+!deepspeech --model speech/output_graph.pbmm --lm speech/lm.binary --trie speech/trie --audio /content/06_M_artic_01_004.wav
+```
+
+![](images/code_execution.gif)
+
+
+**If you run into issue while loading the pre-trained model, then it is mostly due to your deepspeech version.**
+
+
 ## Contents:
 
 - vui_notebook.ipynb: **DNN Custom Models and Comparative Analysis** to make a custom Speech Recognition model.
@@ -57,7 +73,7 @@ These are the high level steps we gonna do:
 - The dataset contains the audio and its description. But to load the data to deep speech model, we need to generate CSV containing audio file path, its transcription and file size.
 - **Split the CSV file** into 3 parts: test.csv,train.csv and valid.csv.
 - Write a **python program to set the frame rate** for all audio files into 12000hz (deep speech model requirement)
-- Clone the **Baidu DeepSpeech Project** 0.4.1 from here
+- Clone the **Baidu DeepSpeech Project** 0.6.1 from [here](https://github.com/mozilla/DeepSpeech)
 - **Execute DeepSpeech.py** with appropriate parameters (given below).
 - Export_dir will contain output_graph.pbmm which you load in deepspeech.model() function.
 - **KenLM ToolKit** is used to generate Trie file. It is required to pass in to deep speech decoder function. 
