@@ -73,7 +73,7 @@ These are the high level steps we gonna do:
 - The dataset contains the audio and its description. But to load the data to deep speech model, we need to generate CSV containing audio file path, its transcription and file size.
 - **Split the CSV file** into 3 parts: test.csv,train.csv and valid.csv.
 - Write a **python program to set the frame rate** for all audio files into 12000hz (deep speech model requirement)
-- Clone the **Baidu DeepSpeech Project** 0.6.1 from [here](https://github.com/mozilla/DeepSpeech)
+- Clone the **Baidu DeepSpeech Project** 0.4.1 from [here](https://github.com/mozilla/DeepSpeech/archive/v0.4.1.tar.gz)
 - **Execute DeepSpeech.py** with appropriate parameters (given below).
 - Export_dir will contain output_graph.pbmm which you load in deepspeech.model() function.
 - **KenLM ToolKit** is used to generate Trie file. It is required to pass in to deep speech decoder function. 
